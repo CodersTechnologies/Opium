@@ -147,6 +147,8 @@ public class frmLogin extends javax.swing.JFrame {
             rs=pst.executeQuery();
             if(rs.next()){
                 JOptionPane.showMessageDialog(null, "","",JOptionPane.INFORMATION_MESSAGE);
+                frmDashboard dash=new frmDashboard();
+                dash.setVisible(true);
                 this.dispose();
             }
             else{
