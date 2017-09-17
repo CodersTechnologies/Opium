@@ -17,7 +17,7 @@ public class javaconnect {
     public static Connection ConnectDB(){
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection conn=DriverManager.getConnection("jdbc:sqlite:opium.sqlite");
+            Connection conn=DriverManager.getConnection("jdbc:sqlite:opium.db3");
             //JOptionPane.showMessageDialog(null, "Connected to Opium-Pharmacare System database.");
             return conn;
         }catch(ClassNotFoundException | SQLException e){
